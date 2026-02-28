@@ -1,0 +1,7 @@
+{ ... }:
+{
+  imports = [   
+    ./shell
+    ./ghostty.nix
+  ];
+}
