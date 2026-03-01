@@ -4,7 +4,7 @@
   programs.fish = {
     enable = true; # enables fish shell
     shellAliases = {
-      nrs="sudo nixos-rebuild switch --flake ~/conf/"; # rebuilds the system configuration
+      nrs="sudo nixos-rebuild switch --flake ~/nix-conf/"; # rebuilds the system configuration
     };
   };
 }
