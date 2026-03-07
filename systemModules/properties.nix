@@ -12,9 +12,6 @@
     layout = "us";
     variant = "";
   };
-  
-  #enables flatpaks
-  #services.flatpak.enable = true;
 
   # allows "unfree" packages.
   nixpkgs.config.allowUnfree = true;

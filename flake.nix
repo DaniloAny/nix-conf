@@ -1,28 +1,28 @@
 {
-  description = "A very basic flake";
+  description = "System flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
-    
-    hyprland.url = "github:hyprwm/Hyprland";
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland"; # Prevents version mismatch.
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+      };
     };
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, ... }@inputs: 
     let
-     mods = ./modules;
-     userName = "danilo";
+      smod = ./systemModules;
+      pmod = ./pkgModules;
     in
     {
       nixosConfigurations.Artemis= nixpkgs.lib.nixosSystem{
         system = "x86_64-linux";
-        specialArgs = { inherit inputs mods; };
+        specialArgs = { inherit inputs pmod smod; };
         modules = [
-          ./common
-          ./hosts/Artemis/configuration.nix
+          ./Hosts/Artemis/configuration.nix
+          ./users.nix
         ];
       };
     };

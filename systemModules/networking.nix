@@ -1,17 +1,8 @@
 { ... }:
-
 {
-
-  #enable network manager
-  networking.networkmanager.enable = true;
-
-  programs.wireshark.enable = true;
-  programs.wireshark.dumpcap.enable = true;
 
   networking = {
     useDHCP = false;
-
-    hostName = "Artemis";
 
     interfaces.enp5s0.ipv4.addresses = [{
       address = "192.168.0.30";

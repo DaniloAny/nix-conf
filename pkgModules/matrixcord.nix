@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-	davinci-resolve
-	blender
+  discord
+  element-desktop
   ];
 }

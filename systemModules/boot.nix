@@ -4,7 +4,7 @@
     systemd-boot.enable = false;
     limine ={
         enable = true;
-        maxGenerations = 5;
+        maxGenerations = 20;
         efiSupport = true;
         style = {
           wallpapers = [

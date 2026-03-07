@@ -1,4 +1,4 @@
-{ pkgs, inputs, userName, ... }:
+{ pkgs, inputs, ... }:
 
 {
    users.users.danilo = {
