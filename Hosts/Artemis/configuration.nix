@@ -11,6 +11,7 @@
     "${smod}/fonts.nix"
     "${smod}/flatpak.nix"
     "${smod}/properties.nix"
+    "${smod}/audio.nix"
 
     # package Modules
     "${pmod}/terminal.nix"
