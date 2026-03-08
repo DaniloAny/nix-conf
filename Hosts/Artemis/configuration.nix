@@ -13,6 +13,7 @@
     "${smod}/properties.nix"
 
     # package Modules
+    "${pmod}/terminal.nix"
     "${pmod}/git.nix"
     "${pmod}/hyprland.nix"
     "${pmod}/davinci.nix"
