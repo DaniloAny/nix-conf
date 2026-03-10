@@ -23,6 +23,7 @@
     "${pmod}/browser.nix"
     "${pmod}/ssh.nix"
     "${pmod}/matrixcord.nix"
+    "${pmod}/steam.nix"
 
     ./hardware-configuration.nix
   ];
