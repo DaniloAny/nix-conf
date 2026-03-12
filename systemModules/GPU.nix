@@ -1,8 +1,17 @@
-{ config, pkgs, ... }:
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
+  environment.variables = {
+    RUSTICL_ENABLE = "radeonsi";
+  };
   hardware.graphics = {
     enable = true;
-    enable32Bit = true;
+    extraPackages = with pkgs; [
+      mesa.opencl # Enables Rusticl (OpenCL) support
+    ];
   };
-  hardware.amdgpu.opencl.enable = true;
 }
