@@ -12,6 +12,7 @@
     "${smod}/flatpak.nix"
     "${smod}/properties.nix"
     "${smod}/audio.nix"
+    "${smod}/ly.nix"
 
     # package Modules
     "${pmod}/terminal.nix"
@@ -24,6 +25,7 @@
     "${pmod}/ssh.nix"
     "${pmod}/matrixcord.nix"
     "${pmod}/steam.nix"
+    "${pmod}/fastfetch.nix"
 
     ./hardware-configuration.nix
   ];
