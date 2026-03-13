@@ -15,6 +15,7 @@
     "${smod}/ly.nix"
 
     # package Modules
+    "${pmod}/krita.nix"
     "${pmod}/terminal.nix"
     "${pmod}/git.nix"
     "${pmod}/hyprland.nix"
