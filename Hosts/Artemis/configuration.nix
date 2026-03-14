@@ -13,6 +13,8 @@
     "${smod}/properties.nix"
     "${smod}/audio.nix"
     "${smod}/ly.nix"
+    "${smod}/udisks2.nix"
+    "${smod}/nwg-look.nix"
 
     # package Modules
     "${pmod}/krita.nix"
@@ -29,6 +31,7 @@
     "${pmod}/fastfetch.nix"
     "${pmod}/virtualbox.nix"
     "${pmod}/FreeCAD.nix"
+    
 
     ./hardware-configuration.nix
   ];
