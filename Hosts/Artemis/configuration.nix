@@ -27,6 +27,7 @@
     "${pmod}/matrixcord.nix"
     "${pmod}/steam.nix"
     "${pmod}/fastfetch.nix"
+    "${pmod}/virtualbox.nix"
 
     ./hardware-configuration.nix
   ];
