@@ -28,6 +28,7 @@
     "${pmod}/steam.nix"
     "${pmod}/fastfetch.nix"
     "${pmod}/virtualbox.nix"
+    "${pmod}/FreeCAD.nix"
 
     ./hardware-configuration.nix
   ];
