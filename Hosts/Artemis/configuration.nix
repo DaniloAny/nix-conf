@@ -15,6 +15,7 @@
     "${smod}/ly.nix"
     "${smod}/udisks2.nix"
     "${smod}/nwg-look.nix"
+    "${smod}/udev.nix"
 
     # package Modules
     "${pmod}/krita.nix"
@@ -31,6 +32,7 @@
     "${pmod}/fastfetch.nix"
     "${pmod}/virtualbox.nix"
     "${pmod}/FreeCAD.nix"
+    
     
 
     ./hardware-configuration.nix

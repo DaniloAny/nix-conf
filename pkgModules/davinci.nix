@@ -6,5 +6,9 @@
     orca-slicer
     kdePackages.dolphin
     libreoffice-still
+    python313
+    python313Packages.pip
+    stremio-linux-shell
+
   ];
 }

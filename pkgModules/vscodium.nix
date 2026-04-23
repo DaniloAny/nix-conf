@@ -1,7 +1,6 @@
-{ pkgs,  ... }:
+{ pkgs, ...}:
 {
-  programs.vscode = {
-    enable = true;
-    package = pkgs.vscodium;
-  }
+  environment.systemPackages = with pkgs; [ 
+    vscodium
+  ];
 }
